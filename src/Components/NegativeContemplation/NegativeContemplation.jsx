@@ -1,4 +1,5 @@
 import Visualisation from '../../Images/MainMenu/ChallengeBoxes/visualisation.png';
+import { Link } from 'react-router-dom';
 
 export default function NegativeContemplation() {
   return (
@@ -8,8 +9,13 @@ export default function NegativeContemplation() {
         <p> 5-15 Minut </p>
       </div>
       <div className="button-div">
+        <Link to="/NegativeContemplation01">
         <button>Start</button>
+        </Link>
+
       </div>
     </div>
   );
 }
+
+

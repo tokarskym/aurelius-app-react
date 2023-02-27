@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function DiscomfortTraining() {
   return (
     <div className="box-rectangle">
@@ -5,7 +7,9 @@ export default function DiscomfortTraining() {
         <h2>Trening dyskomfortu</h2>
         <p> 24 godziny </p>
       </div>
-      <button> Start </button>
+      <Link to="/discomforttraining01">
+        <button> Start </button>
+      </Link>
     </div>
   );
 }

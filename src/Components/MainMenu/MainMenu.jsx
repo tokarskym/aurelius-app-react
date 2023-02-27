@@ -9,6 +9,7 @@ import DiscomfortTraining from '../DiscomfortTraining/DiscomfortTraining';
 import NegativeContemplation from '../NegativeContemplation/NegativeContemplation';
 import StoicQuotes from '../StoicQuotes/StoicQuotes';
 import Journal from '../Journal/Journal';
+import ChallengeDescriptionPage from '../ChallengeDescriptionPage/ChallengeDescriptionPage';
 
 export default function MainMenu() {
   const text = 'Cześć,\njak się teraz czujesz?';
@@ -62,6 +63,7 @@ export default function MainMenu() {
         <StoicQuotes />
         <Journal />
       </div>
+      <ChallengeDescriptionPage />
     </div>
   );
 }

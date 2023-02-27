@@ -1,4 +1,5 @@
 import Thoughts from '../../Images/MainMenu/ChallengeBoxes/thoughts.png';
+import { Link } from 'react-router-dom';
 
 export default function ThoughtsTrap() {
   return (
@@ -11,7 +12,9 @@ export default function ThoughtsTrap() {
         <p>10 minut</p>
       </div>
       <div className="button-div">
-        <button>Start</button>
+        <Link to="/thoughtstrap01">
+          <button>Start</button>
+        </Link>
       </div>
     </div>
   );

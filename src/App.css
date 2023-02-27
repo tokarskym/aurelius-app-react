@@ -24,10 +24,19 @@ hr {
 a {
   text-decoration: none;
 }
+button {
+  border-style: none;
+}
 
 .container {
   width: 92%;
   margin: 0 auto;
+}
+
+.challenge-description-bg {
+  background-image: url(/src/Images/Challenges/challenge-description-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .welcomepage-background {
@@ -137,6 +146,8 @@ a {
 }
 .container nav {
   margin: 30px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .typed-text {
@@ -507,4 +518,68 @@ a {
 .box-description p,
 .box-rectangle p {
   font-size: clamp(12px, 1.6vw, 16px);
+}
+/* challenge description */
+
+button.back-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #f9c090;
+  cursor: pointer;
+}
+
+.challenge-description h1 {
+  font-size: 26px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  color: #3f414e;
+  line-height: 135%;
+  text-align: left;
+}
+
+.challenge-description p {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 169%;
+  text-align: center;
+  color: #3f414e;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.challenge-description h4 {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 169%;
+  text-align: center;
+  color: #3f414e;
+  margin-bottom: 10px;
+}
+
+hr {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.exercise-description p {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 169%;
+  text-align: justify;
+  color: #3f414e;
+  margin-bottom: 20px;
+}
+
+.exercise-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
