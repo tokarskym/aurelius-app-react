@@ -118,6 +118,23 @@ a {
   animation: spin 1s linear infinite;
 }
 
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
 .container nav {
   margin: 30px 0 30px 0;
 }
@@ -133,10 +150,9 @@ a {
 
 .emotions-container {
   display: flex;
-  gap: 10px;
+  gap: 6px;
   margin: 10px 0 10px 0;
   max-height: 100px;
-  max-width: 92%;
   overflow-x: auto;
   white-space: nowrap;
 }
@@ -281,6 +297,133 @@ a {
   }
 }
 
+.box-menu {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.box-top-square,
+.box-bottom-square {
+  width: 162px;
+  height: 182px;
+  border-radius: 20px;
+}
+
+.box-description {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0 0 10px;
+}
+
+.box-description p,
+.box-description h1,
+.box-rectangle-description p,
+.box-rectangle-description h1 {
+  margin: 0;
+}
+
+.button-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box-bottom-square {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+}
+
+.box-rectangle {
+  width: 338px;
+  height: 87px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333242;
+  border-radius: 20px;
+  background-size: cover;
+}
+
+.image-in-the-box {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-in-the-box img {
+  width: 90%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.image-in-the-box .image-thoughts {
+  width: 70%;
+}
+
+.image-in-the-box .image-challenge {
+  margin-top: 16px;
+}
+
+.box-rectangle-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.box-top-square h2,
+.box-bottom-square h2,
+.box-rectangle h2 {
+  color: #ffff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.box-top-square p,
+.box-bottom-square p,
+.box-rectangle p {
+  font-size: 10px;
+  color: #ebeaec;
+  font-family: 'Work Sans', sans-serif;
+  display: inline-block;
+}
+
+.box-menu button {
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  width: clamp(55px, 14.7vw, 118px);
+  height: clamp(28px, 7.2vw, 49px);
+  font-size: clamp(12px, 2.4vw, 18px);
+  border: 2px solid #fff;
+  border-radius: 25px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.box-menu button:hover {
+  background-color: #fff;
+  color: #615877;
+  border-color: #615877;
+  cursor: pointer;
+}
+
+.box-bottom-square h2,
+.box-bottom-square p {
+  color: #3f4553;
+}
+
 @media only screen and (min-width: 425px) {
   .welcomepage-background {
     min-height: 600px;
@@ -293,14 +436,75 @@ a {
   }
 }
 
-@keyframes blink {
-  0% {
-    opacity: 0;
+@media only screen and (min-width: 400px) and (max-width: 770px) {
+  .box-top-square,
+  .box-bottom-square {
+    width: calc(162px + (346 - 162) * ((100vw - 400px) / (770 - 400)));
+    height: calc(182px + (390 - 182) * ((100vw - 400px) / (770 - 400)));
   }
-  50% {
-    opacity: 1;
+  .box-rectangle {
+    width: calc(338px + (717 - 338) * ((100vw - 400px) / (770 - 400)));
+    height: calc(87px + (120 - 87) * ((100vw - 400px) / (770 - 400)));
   }
-  100% {
-    opacity: 0;
+}
+
+@media (min-width: 770px) {
+  .box-top-square,
+  .box-bottom-square {
+    width: 346px;
+    height: 390px;
   }
+  .box-rectangle {
+    width: 717px;
+    height: 120px;
+  }
+  .container {
+    width: 709px;
+  }
+}
+
+@media (min-width: 500px) {
+  .box-description {
+    margin: 10px 0 0 0;
+  }
+
+  .box-description p {
+    margin: 5px 0 5px 0;
+  }
+
+  .box-top-square,
+  .box-bottom-square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-description p {
+    text-align: center;
+  }
+
+  .box-menu button {
+    margin: 0;
+  }
+
+  .box-rectangle button {
+    margin-right: 10px;
+  }
+  .box-menu .box-bottom-square button {
+    border-color: #3f4553;
+    color: #3f4553;
+  }
+}
+
+/*newValue = startValue + (endValue - startValue) * ((screenWidth - startWidth) / (endWidth - startWidth)) */
+
+.box-description h2,
+.box-rectangle h2 {
+  font-size: clamp(16px, 2.6667vw, 24px);
+}
+
+.box-description p,
+.box-rectangle p {
+  font-size: clamp(12px, 1.6vw, 16px);
 }

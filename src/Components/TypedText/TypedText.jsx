@@ -13,7 +13,7 @@ export default function TypedText({ text }) {
           typedText.current.innerHTML += '&nbsp;';
         }
       }
-      setTimeout(typeWriter, 150);
+      setTimeout(typeWriter, 50);
     }
   }
 

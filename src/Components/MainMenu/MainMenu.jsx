@@ -3,6 +3,12 @@ import EmotionsList from '../EmotionsDiv/EmotionsList';
 import TypedText from '../TypedText/TypedText';
 import { useState } from 'react';
 import EmotionsModal from '../EmotionsDiv/EmotionsModal';
+import ThoughtsTrap from '../ThoughtsTrap/ThoughtsTrap';
+import ChallengeOfTheDay from '../ChallengeOfTheDay/ChallengeOfTheDay';
+import DiscomfortTraining from '../DiscomfortTraining/DiscomfortTraining';
+import NegativeContemplation from '../NegativeContemplation/NegativeContemplation';
+import StoicQuotes from '../StoicQuotes/StoicQuotes';
+import Journal from '../Journal/Journal';
 
 export default function MainMenu() {
   const text = 'Cześć,\njak się teraz czujesz?';
@@ -36,7 +42,6 @@ export default function MainMenu() {
       <div className="emotions-container">
         <EmotionsList onEmotionClick={onEmotionClick} />
       </div>
-      <hr />
       {showModal && (
         <div className="modal">
           <div className="modal-background" onClick={() => setShowModal(false)} />
@@ -49,6 +54,14 @@ export default function MainMenu() {
           />
         </div>
       )}
+      <div className="box-menu">
+        <ThoughtsTrap />
+        <ChallengeOfTheDay />
+        <DiscomfortTraining />
+        <NegativeContemplation />
+        <StoicQuotes />
+        <Journal />
+      </div>
     </div>
   );
 }
