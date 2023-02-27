@@ -22,7 +22,6 @@ export default function ChallengeDescriptionPage({ title, quote, philosopher, de
         <Link to={url} className="button-style">
           Start
         </Link>
-
         <hr />
       </div>
     </div>
