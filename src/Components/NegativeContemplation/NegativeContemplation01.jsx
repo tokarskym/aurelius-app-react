@@ -1,4 +1,4 @@
-import ChallengeDescriptionPage from '../ChallengeDescriptionPage/ChallengeDescriptionPage';
+import ChallengeDescriptionPage from '../ChallengesReusableComponents/ChallengeDescriptionPage';
 
 export default function NegativeContemplation01() {
   return (

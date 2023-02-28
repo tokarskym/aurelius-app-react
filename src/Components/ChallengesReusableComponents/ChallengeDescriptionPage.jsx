@@ -1,13 +1,14 @@
 import NavbarLogo from '../../Images/MainMenu/Navbar/navbar-logo.png';
 import BackButton from '../../Images/Challenges/back.png';
 import { Link } from 'react-router-dom';
+import { handleBackButtonClick } from '../../Utils/BackButton';
 
 export default function ChallengeDescriptionPage({ title, quote, philosopher, description, url }) {
   return (
     <div className="container challenge-description-bg">
       <nav>
         <img src={NavbarLogo} alt="Navbar logo app" />
-        <button className="back-button">
+        <button className="back-button" onClick={handleBackButtonClick}>
           <img src={BackButton} alt="" />
         </button>
       </nav>
