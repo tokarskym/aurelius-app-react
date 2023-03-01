@@ -3,7 +3,7 @@ import EmotionsList from '../EmotionsDiv/EmotionsList';
 import TypedText from '../TypedText/TypedText';
 import { useState } from 'react';
 import EmotionsModal from '../EmotionsDiv/EmotionsModal';
-import ThoughtsTrap from '../ThoughtsTrap/ThoughtsTrap';
+import ThoughtsTrap from '../ThoughtsTraps/ThoughtsTrap';
 import ChallengeOfTheDay from '../ChallengeOfTheDay/ChallengeOfTheDay';
 import DiscomfortTraining from '../DiscomfortTraining/DiscomfortTraining';
 import NegativeContemplation from '../NegativeContemplation/NegativeContemplation';
