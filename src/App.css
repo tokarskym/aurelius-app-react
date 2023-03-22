@@ -33,7 +33,7 @@ button {
   margin: 0 auto;
 }
 
-.challenge-description-bg {
+.background-cover {
   background-image: url(/src/Images/Challenges/challenge-description-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -201,11 +201,11 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1; /* Make sure the modal is on top of other elements */
+  z-index: 1;
 }
 
 .modal-content {
@@ -409,7 +409,7 @@ button {
   display: inline-block;
 }
 
-.box-menu button {
+.box-menu .start-link {
   background-color: transparent;
   color: #fff;
   text-transform: uppercase;
@@ -421,9 +421,23 @@ button {
   margin-right: 10px;
   margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.box-menu button:hover {
+.box-menu .additional-margin {
+  margin-right: 10px;
+}
+
+.box-menu .different-color {
+  color: #615877;
+  border-color: #615877;
+}
+
+.box-menu .start-link:hover {
   background-color: #fff;
   color: #615877;
   border-color: #615877;
@@ -495,8 +509,12 @@ button {
     text-align: center;
   }
 
-  .box-menu button {
+  .box-menu .start-link {
     margin: 0;
+  }
+
+  .box-menu .additional-margin {
+    margin-right: 10px;
   }
 
   .box-rectangle button {
@@ -584,7 +602,7 @@ hr {
   align-items: center;
 }
 
-.progress-bar {
+.progress-bar-thoughts {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -690,4 +708,594 @@ h1.thoughts-challenge-title {
 
 .selected {
   background-color: #f6a560;
+}
+
+.progress-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #3f4553;
+}
+
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.progress-left,
+.progress-right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.progress-left {
+  left: 0;
+}
+
+.progress-right {
+  left: 50%;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #f6a560;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transform-origin: 100% 100%;
+  animation: progress 15s linear infinite;
+}
+
+.progress-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #f6a560;
+}
+
+@keyframes progress {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+.progress {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.progress-pie {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.progress-front {
+  left: 0;
+  transform: rotate(var(--progress));
+  z-index: 1;
+}
+
+.progress-back {
+  right: 0;
+}
+
+.progress-bar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 10px solid #f6a560;
+  border-radius: 50%;
+  clip: rect(0px, 100px, 200px, 0px);
+  box-sizing: border-box;
+}
+
+.progress-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.progress-value h3 {
+  margin: 0;
+  color: #3f4553;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.progress-value button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3f4553;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.progress-value button:hover {
+  background-color: #2b303c;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttons-container button:hover {
+  background-color: #2b303c;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Track styles */
+.slider .slider-track-0,
+.slider .slider-track-1 {
+  height: 6px;
+  border-radius: 6px;
+}
+
+.slider .slider-track-0 {
+  background-color: #3f4553;
+}
+
+.slider .slider-track-1 {
+  background-color: #f6a560;
+}
+
+/* Thumb styles */
+.slider .slider-thumb-0,
+.slider .slider-thumb-1 {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #f6a560;
+  border: 2px solid #3f4553;
+  margin-top: -6px;
+}
+
+/* Label styles */
+.slider .slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #3f4553;
+}
+
+/*negative contemplation*/
+.circular-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.timer-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+.time-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.time {
+  font-size: 72px;
+  font-weight: bold;
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+.timer-label {
+  font-size: 24px;
+  font-weight: bold;
+  color: #666666;
+}
+
+.slider-wrapper {
+  margin-top: 20px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-control {
+  margin: 10px;
+}
+
+.modal-body input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 10px #dddddd;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.playButton {
+  background-color: transparent;
+  color: red;
+  border: 0;
+  display: inline-block;
+  width: 100px;
+  cursor: pointer;
+}
+
+.pauseButton {
+  background-color: transparent;
+  color: red;
+  border: 0;
+  display: inline-block;
+  width: 100px;
+  cursor: pointer;
+}
+
+.settingsButton {
+  background-color: transparent;
+  color: red;
+  border: 0;
+  display: inline-block;
+  width: 100px;
+  cursor: pointer;
+}
+
+.settingsButton.with-text {
+  width: auto;
+  background-color: red;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.4 rem;
+  line-height: 36px;
+}
+
+.settingsButton.with-text svg {
+  float: left;
+  margin-right: 5px;
+  width: 36px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+:root {
+  --red: #f54e4e;
+  --green: #4aec8c;
+}
+
+main {
+  padding-top: 50px;
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button.with-text {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  line-height: 36px;
+}
+
+button.with-text svg {
+  width: 36px;
+  float: left;
+  margin-right: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.slider {
+  height: 40px;
+  border: 2px solid var(--red);
+  border-radius: 20px;
+}
+
+.thumb {
+  background-color: var(--red);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+/* dziennik emocjonalny */
+
+ul.emotions-journal {
+  margin-top: 100px;
+}
+li.emotions-list {
+  list-style-type: none;
+}
+
+.img-emo-journal {
+  width: 41px;
+  height: 41px;
+}
+
+.single-journal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #f5eee7;
+  border-radius: 20px;
+}
+
+.single-journal p {
+  word-break: break-word;
+  width: 320px;
+  text-align: center;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  text-align: center;
+}
+
+.delete-button svg {
+  width: 40px;
+  color: rgb(246, 165, 96);
+}
+
+.delete-button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.emotion-journal-heading {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 169%;
+  text-align: justify;
+  color: #3f414e;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div.single-journal button {
+  margin-right: 10px;
+}
+
+div.container-piechart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: -70px;
+}
+
+/*pie chart label text */
+.recharts-legend-item-text {
+  font-size: 13px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+}
+
+.recharts-default-tooltip {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.recharts-legend-wrapper {
+  border: 2px solid #f5eee7;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.recharts-curve,
+.recharts-pie-label-line,
+.recharts-text,
+.recharts-pie-label-text {
+  display: none;
+}
+
+/* start stoic quotes */
+
+.english-quote,
+.translated-quote,
+.quote-author,
+.favourite-quotes h2,
+.favourite-author-and-quote p.fav-author,
+.favourite-author-and-quote p.fav-quote {
+  font-family: 'Work Sans';
+  font-style: normal;
+  line-height: 169%;
+  color: #3f414e;
+}
+
+.english-quote {
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 26px 0 10px 0;
+}
+
+.translated-quote {
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  margin: 5px 0 5px 0;
+}
+
+.quote-author {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.add-quote-button {
+  width: 48px;
+  height: 48px;
+  background-color: #d3d265;
+  border-radius: 50px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.generate-quote-div,
+.quote-generator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.favourite-quotes h2 {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+.favourite-author-and-quote {
+  width: 80%;
+}
+
+.favourite-author-and-quote p.fav-author {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 169%;
+  text-align: left;
+  color: #3f414e;
+  margin-top: 5px;
+}
+
+.favourite-author-and-quote p.fav-quote {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.favourite-quote button {
+  background: #f47850;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+.favourite-quote {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.favourite-quotes {
+  margin-bottom: 50px;
+}
+
+.generate-quote-div button {
+  margin-top: 50px;
+}
+
+.error-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-modal .error-modal-message {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  color: #3f414e;
+  line-height: 135%;
+}
+
+.error-modal .error-modal-try-again {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.error-modal button {
+  margin-top: 50px;
+}
+
+/*end stoic quotes*/
+
+hr {
+  width: 143px;
+  border: 2px solid #f9c090;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }

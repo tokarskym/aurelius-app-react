@@ -42,9 +42,9 @@ export default function ChallengePage({ title, description, userExplanation, use
   const handleFinishClick = () => {
     if (linkRef.current && linkRef.current.innerText === 'ZAKOŃCZ') {
       setUserExplanation('');
-       setUserEmotions('');
-       setUserClarification('');
-       setUserAlternative('');
+      setUserEmotions('');
+      setUserClarification('');
+      setUserAlternative('');
     }
   };
 

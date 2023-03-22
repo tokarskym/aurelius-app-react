@@ -8,7 +8,7 @@ function ProgressBar({ currentPage, totalPages }) {
     circles.push(<div key={i} className={className}></div>);
   }
 
-  return <div className="progress-bar">{circles}</div>;
+  return <div className="progress-bar-thoughts">{circles}</div>;
 }
 
 export default ProgressBar;

@@ -1,13 +1,16 @@
 import RectangleBoxBackground from '../../Images/MainMenu/ChallengeBoxes/rectanglebox.png';
+import { Link } from 'react-router-dom';
 
 export default function Journal() {
   return (
     <div className="box-rectangle" style={{ backgroundImage: `url(${RectangleBoxBackground})` }}>
       <div className="box-rectangle-description">
-        <h2>Dziennik</h2>
-        <p>24 godziny </p>
+        <h2>Dziennik emocjonalny</h2>
+        <p>24 godziny</p>
       </div>
-      <button> Start </button>
+      <Link to="/journalchart" className="start-link additional-margin">
+        Start
+      </Link>
     </div>
   );
 }

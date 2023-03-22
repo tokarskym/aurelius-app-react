@@ -1,7 +1,7 @@
 import Logo from '../../Images/WelcomePage/aurelius.png';
+import Loader from '../../Utils/Loader';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 export default function WelcomePage() {
   const [showLoader, setShowLoader] = useState(false);
@@ -30,10 +30,7 @@ export default function WelcomePage() {
           </Link>
           <hr />
         </div>
-        <div id="loader" style={{ display: showLoader ? 'flex' : 'none' }}>
-          <div className="loading-text">Ładowanie...</div>
-          <div className="loading-spinner"></div>
-        </div>
+        <Loader show={showLoader} />
       </div>
     </>
   );

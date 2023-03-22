@@ -1,7 +1,7 @@
 import NavbarLogo from '../../Images/MainMenu/Navbar/navbar-logo.png';
 import EmotionsList from '../EmotionsDiv/EmotionsList';
 import TypedText from '../TypedText/TypedText';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import EmotionsModal from '../EmotionsDiv/EmotionsModal';
 import ThoughtsTrap from '../ThoughtsTraps/ThoughtsTrap';
 import ChallengeOfTheDay from '../ChallengeOfTheDay/ChallengeOfTheDay';
@@ -10,11 +10,15 @@ import NegativeContemplation from '../NegativeContemplation/NegativeContemplatio
 import StoicQuotes from '../StoicQuotes/StoicQuotes';
 import Journal from '../Journal/Journal';
 
-export default function MainMenu() {
+export default function MainMenu({ userState, setUserState }) {
   const text = 'Cześć,\njak się teraz czujesz?';
-  const [selectedEmotion, setSelectedEmotion] = useState(null);
-  const [textValue, setTextValue] = useState('');
   const [showModal, setShowModal] = useState(false);
+  const [selectedEmotion, setSelectedEmotion] = useState();
+  const [textValue, setTextValue] = useState('');
+
+  useEffect(() => {
+    localStorage.setItem('userState', JSON.stringify(userState));
+  });
 
   const onEmotionClick = (emotion) => {
     setSelectedEmotion(emotion);
@@ -26,12 +30,13 @@ export default function MainMenu() {
   };
 
   const handleSaveClick = () => {
-    // Do something with selectedEmotion and textValue
-    console.log('Selected Emotion:', selectedEmotion);
-    console.log('Text Value:', textValue);
+    setUserState((prevState) => [...prevState, { userEmotion: selectedEmotion, userExplanation: textValue }]);
+    localStorage.setItem('userState', JSON.stringify([...userState]));
     setShowModal(false);
     setTextValue('');
   };
+
+  console.log(userState);
 
   return (
     <div className="container">
@@ -60,7 +65,7 @@ export default function MainMenu() {
         <DiscomfortTraining />
         <NegativeContemplation />
         <StoicQuotes />
-        <Journal />
+        <Journal userState={userState} />
       </div>
     </div>
   );

@@ -9,13 +9,10 @@ export default function NegativeContemplation() {
         <p> 5-15 Minut </p>
       </div>
       <div className="button-div">
-        <Link to="/NegativeContemplation01">
-        <button>Start</button>
+        <Link to="/NegativeContemplation01" className="start-link different-color">
+          Start
         </Link>
-
       </div>
     </div>
   );
 }
-
-

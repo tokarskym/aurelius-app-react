@@ -1,7 +1,7 @@
 import TypedText from '../TypedText/TypedText';
 import { useState } from 'react';
 
-export default function EmotionsModal({ selectedEmotion, textValue, onTextAreaChange, onSaveClick, setShowModal }) {
+export default function EmotionsModal({ textValue, onTextAreaChange, onSaveClick, setShowModal }) {
   const text = 'Dlaczego się tak \nczujesz?';
   const [isEmpty, setIsEmpty] = useState(true);
 
@@ -26,6 +26,4 @@ export default function EmotionsModal({ selectedEmotion, textValue, onTextAreaCh
     </div>
   );
 }
-/* do poprawy */
-/* <h1 style={{ display: none }}>{selectedEmotion?.description}</h1>
-      <img src={selectedEmotion?.photo} alt="xxx" /> */
+

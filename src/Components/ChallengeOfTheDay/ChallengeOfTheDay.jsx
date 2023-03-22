@@ -1,4 +1,5 @@
 import Challenge from '../../Images/MainMenu/ChallengeBoxes/challenge.png';
+import { Link } from 'react-router-dom';
 
 export default function ChallengeOfTheDay() {
   return (
@@ -11,7 +12,9 @@ export default function ChallengeOfTheDay() {
         <p> 10 minut </p>
       </div>
       <div className="button-div">
-        <button>Start</button>
+        <Link to="/thoughtstrap01" className="start-link">
+          Start
+        </Link>
       </div>
     </div>
   );
