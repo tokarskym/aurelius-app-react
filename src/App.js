@@ -11,10 +11,12 @@ import ThoughtsTrap05 from './Components/ThoughtsTraps/ThoughtsTrap05';
 import ThoughtsTrap06 from './Components/ThoughtsTraps/ThoughtsTrap06';
 import QuoteGenerator from './Components/StoicQuotes/QuoteGenerator';
 import JournalChart from './Components/Journal/JournalChart';
-import NegativeContemplation01 from './Components/NegativeContemplation/NegativeContemplation01';
-import NegativeContemplation05 from './Components/NegativeContemplation/NegativeContemplation05';
+import NegativeContemplationIntro from './Components/NegativeContemplation/Intro/NegativeContemplationIntro';
+import TimerAndSettings from './Components/NegativeContemplation/TimerAndSettings';
 import { useState, useEffect } from 'react';
 import DiscomfortTraining01 from './Components/DiscomfortTraining/DiscomfortTraining01';
+import MeditationSelector from './Components/NegativeContemplation/MeditationSelector';
+import DiscomfortTrainingExercises from './Components/DiscomfortTraining/DiscomfortTrainingExercises';
 
 export default function App() {
   // emotions + description of user state //
@@ -37,8 +39,10 @@ export default function App() {
           <Route path="/thoughtstrap06" element={<ThoughtsTrap06 />} />
           <Route path="/journalchart" element={<JournalChart userState={userState} setUserState={setUserState} />} />
           <Route path="/quotegenerator" element={<QuoteGenerator />} />
-          <Route path="/negativecontemplation01" element={<NegativeContemplation01 />} />
-          <Route path="/negativecontemplation05" element={<NegativeContemplation05 />} />
+          <Route path="/negativecontemplationintro" element={<NegativeContemplationIntro />} />
+          <Route path="/discomforttrainingexercises" element={<DiscomfortTrainingExercises />} />
+          <Route path="/meditationselector" element={<MeditationSelector />} />
+          <Route path="/timerandsettings" element={<TimerAndSettings />} />
           <Route path="/discomforttraining01" element={<DiscomfortTraining01 />} />
         </Routes>
       </Router>

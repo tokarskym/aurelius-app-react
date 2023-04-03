@@ -1,4 +1,5 @@
-import Visualisation from '../../Images/MainMenu/ChallengeBoxes/visualisation.png';
+import Visualisation from '../../../Images/MainMenu/ChallengeBoxes/visualisation.png';
+
 import { Link } from 'react-router-dom';
 
 export default function NegativeContemplation() {
@@ -9,7 +10,7 @@ export default function NegativeContemplation() {
         <p> 5-15 Minut </p>
       </div>
       <div className="button-div">
-        <Link to="/NegativeContemplation01" className="start-link different-color">
+        <Link to="/negativecontemplationintro" className="start-link different-color">
           Start
         </Link>
       </div>

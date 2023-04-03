@@ -6,7 +6,7 @@ import EmotionsModal from '../EmotionsDiv/EmotionsModal';
 import ThoughtsTrap from '../ThoughtsTraps/ThoughtsTrap';
 import ChallengeOfTheDay from '../ChallengeOfTheDay/ChallengeOfTheDay';
 import DiscomfortTraining from '../DiscomfortTraining/DiscomfortTraining';
-import NegativeContemplation from '../NegativeContemplation/NegativeContemplation';
+import NegativeContemplation from '../NegativeContemplation/Intro/NegativeContemplation';
 import StoicQuotes from '../StoicQuotes/StoicQuotes';
 import Journal from '../Journal/Journal';
 

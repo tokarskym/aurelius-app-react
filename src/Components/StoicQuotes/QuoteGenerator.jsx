@@ -78,7 +78,7 @@ export default function QuoteGenerator() {
 
   // Favourites quotes functions
   const addToFavorites = () => {
-    setFavorites([...favorites, { quote, author, translatedQuote }]);
+    setFavorites([...favorites, { author, translatedQuote }]);
     setPlusButton(false);
   };
 
