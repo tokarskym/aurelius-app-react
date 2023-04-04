@@ -1508,8 +1508,106 @@ label {
 .chevron-button {
   width: 20px;
   height: 20px;
+  background-color: transparent;
 }
 
 .chevron-button.rotated {
   transform: rotate(180deg);
+}
+
+.exercise-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 98px;
+}
+
+.discomfort-exercise-div {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  background-color: #ffe8bf;
+  border-radius: 18px;
+}
+div.left-side-of-exercise h2 {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 169%;
+  color: #3f414e;
+}
+
+div.left-side-of-exercise p {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3f414e;
+}
+
+div.left-side-of-exercise {
+  margin-left: 15px;
+}
+
+div.right-side-of-exercise {
+  margin-right: 15px;
+}
+
+div.description-and-button-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+div.description-and-button-section p {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 169%;
+  /* or 24px */
+
+  text-align: justify;
+
+  color: #3f414e;
+}
+
+div.description-and-button-section button {
+  margin-bottom: 30px;
+}
+
+div.discomfort-exercise-div.started {
+  background-color: #fec391;
+}
+
+div.discomfort-exercise-div.completed {
+  background-color: #d3d265;
+}
+
+div.discomfort-exercise-div.locked {
+  background-color: #f3eee5;
+}
+
+.exercise-unavailable {
+  width: 100%;
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exercise-unavailable h3 {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 169%;
+  text-align: center;
+  color: #3f414e;
 }

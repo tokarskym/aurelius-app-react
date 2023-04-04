@@ -40,10 +40,10 @@ export default function App() {
           <Route path="/journalchart" element={<JournalChart userState={userState} setUserState={setUserState} />} />
           <Route path="/quotegenerator" element={<QuoteGenerator />} />
           <Route path="/negativecontemplationintro" element={<NegativeContemplationIntro />} />
-          <Route path="/discomforttrainingexercises" element={<DiscomfortTrainingExercises />} />
           <Route path="/meditationselector" element={<MeditationSelector />} />
           <Route path="/timerandsettings" element={<TimerAndSettings />} />
           <Route path="/discomforttraining01" element={<DiscomfortTraining01 />} />
+          <Route path="/discomforttrainingexercises" element={<DiscomfortTrainingExercises />} />
         </Routes>
       </Router>
     </React.StrictMode>
