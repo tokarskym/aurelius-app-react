@@ -15,7 +15,7 @@ export default function ChallengeOfTheDay() {
   return (
     <div className="box-top-square" style={{ backgroundColor: isStarted ? '#4E5567' : '#61C4B7' }}>
       <div className="image-in-the-box">
-        <img src={Challenge} alt="image" className="image-challenge" />
+        <img src={Challenge} alt="challenge of the day" className="image-challenge" />
       </div>
       <div className="box-description">
         <h2> {!isStarted ? 'Wyzwanie dnia' : 'Aktualnie niedostępne'}</h2>

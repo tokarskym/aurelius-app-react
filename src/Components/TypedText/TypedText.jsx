@@ -18,16 +18,17 @@ export default function TypedText({ text }) {
   }
 
   useEffect(() => {
+    typeWriter();
     if (!typedText.current) {
       console.error("The element with the id 'typed-text' was not found in the document.");
       return;
     }
-    typeWriter();
+  // eslint-disable-next-line
   }, []);
 
   return (
     <div className="feeling-state">
-      <h1 ref={typedText} className="typed-text"></h1>
+      <div ref={typedText} className="typed-text"></div>
     </div>
   );
 }
