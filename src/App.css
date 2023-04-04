@@ -24,6 +24,7 @@ hr {
 a {
   text-decoration: none;
 }
+
 button {
   border-style: none;
 }
@@ -127,23 +128,6 @@ button {
   animation: spin 1s linear infinite;
 }
 
-.fade-enter {
-  opacity: 0;
-}
-
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 300ms ease-in-out;
-}
-
-.fade-exit {
-  opacity: 1;
-}
-
-.fade-exit-active {
-  opacity: 0;
-  transition: opacity 300ms ease-in-out;
-}
 .container nav {
   margin: 30px 0 30px 0;
   display: flex;
@@ -302,6 +286,7 @@ button {
     opacity: 0;
   }
 }
+
 @keyframes spin {
   100% {
     transform: rotate(360deg);
@@ -1611,3 +1596,67 @@ div.discomfort-exercise-div.locked {
   text-align: center;
   color: #3f414e;
 }
+
+.training-description {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 169%;
+  /* or 24px */
+
+  text-align: justify;
+
+  color: #3f414e;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+
+.description-container {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.avatar-section {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: url(/src/Images/WelcomePage/aurelius.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.points-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.points-number {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 169%;
+  /* or 27px */
+
+  text-align: center;
+
+  color: #3f414e;
+}
+
+.discomfort-exercises-div {
+  margin-bottom: 20px;
+}
+

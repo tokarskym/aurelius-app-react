@@ -17,11 +17,13 @@ export default function DiscomfortTrainingExercises() {
       </div>
       <div className="points-section">
         <div className="avatar-section"></div>
-        <h2>Masz {points} punktów dyskomfortu.</h2>
+        <h2 className="points-number">Masz {points} punktów dyskomfortu.</h2>
       </div>
+      <hr />
       <div className="discomfort-exercises-div">
         <ExerciseList countPoints={countPoints} />
       </div>
+      <hr />
     </div>
   );
 }
