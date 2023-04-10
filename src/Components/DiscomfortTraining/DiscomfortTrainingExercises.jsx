@@ -9,6 +9,7 @@ export default function DiscomfortTrainingExercises() {
   const countPoints = (exercisePoints) => {
     setPoints(points + exercisePoints);
   };
+
   return (
     <div className="container">
       <Navbar />

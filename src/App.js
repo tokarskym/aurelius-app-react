@@ -14,7 +14,7 @@ import JournalChart from './Components/Journal/JournalChart';
 import NegativeContemplationIntro from './Components/NegativeContemplation/Intro/NegativeContemplationIntro';
 import TimerAndSettings from './Components/NegativeContemplation/TimerAndSettings';
 import { useState, useEffect } from 'react';
-import DiscomfortTraining01 from './Components/DiscomfortTraining/DiscomfortTraining01';
+import DiscomfortTraining01 from './Components/DiscomfortTraining/Intro/DiscomfortTraining01';
 import MeditationSelector from './Components/NegativeContemplation/MeditationSelector';
 import DiscomfortTrainingExercises from './Components/DiscomfortTraining/DiscomfortTrainingExercises';
 

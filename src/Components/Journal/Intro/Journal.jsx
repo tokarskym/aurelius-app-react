@@ -1,4 +1,5 @@
-import RectangleBoxBackground from '../../Images/MainMenu/ChallengeBoxes/rectanglebox.png';
+import RectangleBoxBackground from '../../../Images/MainMenu/ChallengeBoxes/rectanglebox.png';
+
 import { Link } from 'react-router-dom';
 
 export default function Journal() {

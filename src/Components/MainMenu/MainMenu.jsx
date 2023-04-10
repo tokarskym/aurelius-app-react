@@ -1,8 +1,8 @@
 import ChallengeOfTheDay from '../ChallengeOfTheDay/ChallengeOfTheDay';
-import DiscomfortTraining from '../DiscomfortTraining/DiscomfortTraining';
+import DiscomfortTraining from '../DiscomfortTraining/Intro/DiscomfortTraining';
 import EmotionsList from '../EmotionsDiv/EmotionsList';
 import EmotionsModal from '../EmotionsDiv/EmotionsModal';
-import Journal from '../Journal/Journal';
+import Journal from '../Journal/Intro/Journal';
 import NavbarLogo from '../../Images/MainMenu/Navbar/navbar-logo.png';
 import NegativeContemplation from '../NegativeContemplation/Intro/NegativeContemplation';
 import StoicQuotes from '../StoicQuotes/Intro/StoicQuotes';
@@ -18,7 +18,7 @@ export default function MainMenu({ userState, setUserState }) {
 
   const text = 'Cześć,\njak się teraz czujesz?';
 
-  //get record of user feeling state
+  //set record of user feeling state
   useEffect(() => {
     localStorage.setItem('userState', JSON.stringify(userState));
   });

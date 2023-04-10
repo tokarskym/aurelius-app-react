@@ -1,4 +1,4 @@
-import ChallengeDescriptionPage from '../ChallengesReusableComponents/ChallengeDescriptionPage';
+import ChallengeDescriptionPage from '../../ChallengesReusableComponents/ChallengeDescriptionPage';
 
 export default function DiscomfortTraining01() {
   return (

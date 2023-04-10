@@ -1,4 +1,5 @@
 import Emotion from './Emotion';
+
 import { emotions } from '../../Data/EmotionsData';
 
 export default function EmotionsList({ onEmotionClick }) {

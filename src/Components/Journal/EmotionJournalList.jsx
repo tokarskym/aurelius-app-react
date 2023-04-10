@@ -1,4 +1,3 @@
-import React from 'react';
 import EmotionJournalItem from './EmotionJournalItem';
 
 export default function EmotionJournalList({ userState, handleDelete }) {
