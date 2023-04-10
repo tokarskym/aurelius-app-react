@@ -9,9 +9,11 @@ export default function StoicQuotes() {
         <h2>Stoickie cytaty</h2>
         <p> 5 Minut </p>
       </div>
-      <Link to="/quotegenerator" className="start-link different-color">
-        Start
-      </Link>
+      <div className="button-div">
+        <Link to="/quotegenerator" className="start-link start-link-dark">
+          Start
+        </Link>
+      </div>
     </div>
   );
 }

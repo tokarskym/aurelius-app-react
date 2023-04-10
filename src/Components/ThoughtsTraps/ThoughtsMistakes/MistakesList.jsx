@@ -1,4 +1,5 @@
 import Mistake from './Mistake';
+
 import { mistakes } from '../../../Data/ThoughtsMistakesData';
 
 export default function MistakesList({ selectedMistakes, onMistakeClick }) {

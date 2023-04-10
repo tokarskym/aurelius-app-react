@@ -1,25 +1,29 @@
-import NavbarLogo from '../../Images/MainMenu/Navbar/navbar-logo.png';
-import EmotionsList from '../EmotionsDiv/EmotionsList';
-import TypedText from '../TypedText/TypedText';
-import { useState, useEffect } from 'react';
-import EmotionsModal from '../EmotionsDiv/EmotionsModal';
-import ThoughtsTrap from '../ThoughtsTraps/ThoughtsTrap';
 import ChallengeOfTheDay from '../ChallengeOfTheDay/ChallengeOfTheDay';
 import DiscomfortTraining from '../DiscomfortTraining/DiscomfortTraining';
+import EmotionsList from '../EmotionsDiv/EmotionsList';
+import EmotionsModal from '../EmotionsDiv/EmotionsModal';
+import Journal from '../Journal/Journal';
+import NavbarLogo from '../../Images/MainMenu/Navbar/navbar-logo.png';
 import NegativeContemplation from '../NegativeContemplation/Intro/NegativeContemplation';
 import StoicQuotes from '../StoicQuotes/StoicQuotes';
-import Journal from '../Journal/Journal';
+import ThoughtsTrap from '../ThoughtsTraps/ThoughtsTrap';
+import TypedText from '../TypedText/TypedText';
+
+import { useState, useEffect } from 'react';
 
 export default function MainMenu({ userState, setUserState }) {
-  const text = 'Cześć,\njak się teraz czujesz?';
   const [showModal, setShowModal] = useState(false);
   const [selectedEmotion, setSelectedEmotion] = useState();
   const [textValue, setTextValue] = useState('');
 
+  const text = 'Cześć,\njak się teraz czujesz?';
+
+  //get record of user feeling state
   useEffect(() => {
     localStorage.setItem('userState', JSON.stringify(userState));
   });
 
+  //user emotion choice
   const onEmotionClick = (emotion) => {
     setSelectedEmotion(emotion);
     setShowModal(true);
@@ -36,12 +40,10 @@ export default function MainMenu({ userState, setUserState }) {
     setTextValue('');
   };
 
-  console.log(userState);
-
   return (
     <div className="container">
       <nav>
-        <img src={NavbarLogo} alt="Navbar logo app" />
+        <img src={NavbarLogo} alt="logo app" />
       </nav>
       <TypedText text={text} />
       <div className="emotions-container">

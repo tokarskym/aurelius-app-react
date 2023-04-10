@@ -81,7 +81,7 @@ export default function ExerciseItem({ exercise, isLocked, onComplete }) {
         <div className="description-container">
           <p className="training-description">{exercise.description}</p>
           {!isCompleted && (
-            <button className="button-style button-training" onClick={handleButtonClick}>
+            <button className="button-style button-hover" onClick={handleButtonClick}>
               {buttonText}
             </button>
           )}

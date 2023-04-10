@@ -16,7 +16,7 @@ export default function TimerAndSettings({ timerRef }) {
   }, [timerRef]);
 
   return (
-    <main className="timer-meditation-div" ref={timerRef}>
+    <div className="timer-meditation-div" ref={timerRef}>
       <SettingsContext.Provider
         value={{
           showSettings,
@@ -40,6 +40,6 @@ export default function TimerAndSettings({ timerRef }) {
         )}
         <Timer />
       </SettingsContext.Provider>
-    </main>
+    </div>
   );
 }

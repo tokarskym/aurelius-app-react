@@ -20,7 +20,7 @@ export default function ChallengeDescriptionPage({ title, quote, philosopher, de
       </div>
       <div className="exercise-description">
         <p>{description}</p>
-        <Link to={url} className="button-style">
+        <Link to={url} className="button-style button-hover">
           Start
         </Link>
         <hr />

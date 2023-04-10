@@ -1,6 +1,6 @@
-export default function Loader({ show }) {
+export default function Loader({ showLoader }) {
   return (
-    <div id="loader" style={{ display: show ? 'flex' : 'none' }}>
+    <div className="loader" style={{ display: showLoader ? 'flex' : 'none' }}>
       <div className="loading-text">Ładowanie...</div>
       <div className="loading-spinner"></div>
     </div>

@@ -7,7 +7,7 @@ export default function DiscomfortTraining() {
         <h2>Trening dyskomfortu</h2>
         <p> 24 godziny </p>
       </div>
-      <Link to="/discomforttraining01" className="start-link additional-margin">
+      <Link to="/discomforttraining01" className="start-link start-link-margin">
         Start
       </Link>
     </div>

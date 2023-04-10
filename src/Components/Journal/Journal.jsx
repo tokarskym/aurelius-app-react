@@ -8,7 +8,7 @@ export default function Journal() {
         <h2>Dziennik emocjonalny</h2>
         <p>24 godziny</p>
       </div>
-      <Link to="/journalchart" className="start-link additional-margin">
+      <Link to="/journalchart" className="start-link start-link-margin">
         Start
       </Link>
     </div>

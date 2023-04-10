@@ -45,14 +45,14 @@ export default function MeditationSelector() {
         <div className={`meditation-image ${isAnimating ? 'animating' : ''}`} style={{ backgroundColor: selectedMeditation.color }}>
           <img src={selectedMeditation.photo} alt={`Medytacja ${selectedMeditation.id}`} />
           <h3 className="meditation-name">{selectedMeditation.name}</h3>
-          <button className="start-link" onClick={isStarted ? handleCancelButtonClick : handleStartButtonClick}>
+          <button className="start-link start-meditating-button" onClick={isStarted ? handleCancelButtonClick : handleStartButtonClick}>
             {isStarted ? 'Anuluj' : 'Start'}
           </button>
         </div>
-        {isAnimating && <div>Losowanie medytacji...</div>}
+        {isAnimating && <div className="loading-text">Losowanie medytacji...</div>}
         {!(isAnimating || isStarted) && (
           <>
-            <button className="button-style button-random" onClick={handleStartAnimation}>
+            <button className="button-style button-hover" onClick={handleStartAnimation}>
               Losuj
             </button>
             <p className="meditation-description">{description}</p>

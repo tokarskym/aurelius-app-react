@@ -65,7 +65,7 @@ export default function ChallengePage({ title, description, userExplanation, use
         {userClarification !== undefined && <textarea className="thoughts-text-area" value={clarification} onChange={handleClarificationChange} />}
         {userAlternative !== undefined && <textarea className="thoughts-text-area" value={alternative} onChange={handleAlternativeChange} />}
         <ProgressBar currentPage={currentPage} totalPages={totalPages} />
-        <Link to={url} ref={linkRef} className="button-style" onClick={handleFinishClick}>
+        <Link to={url} ref={linkRef} className="button-style button-hover" onClick={handleFinishClick}>
           {buttonText}
         </Link>
         <hr />

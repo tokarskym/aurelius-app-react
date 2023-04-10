@@ -98,7 +98,7 @@ export default function QuoteGenerator() {
         <QuoteButton getQuote={getQuote} />
       </div>
       {quote === '' && <h3 className="english-quote">Kliknij przycisk aby wygenerować losowy cytat stoicki</h3>}
-      <Loader show={showLoader} />
+      <Loader showLoader={showLoader} />
       {quote !== '' && (
         <QuoteDisplay quote={quote} author={author} isEllipsis={isEllipsis} translatedQuote={translatedQuote} plusButton={plusButton} addToFavorites={addToFavorites} />
       )}

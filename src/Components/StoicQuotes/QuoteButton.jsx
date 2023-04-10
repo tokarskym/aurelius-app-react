@@ -1,6 +1,6 @@
 export default function QuoteButton({ getQuote }) {
   return (
-    <button className="button-style" onClick={getQuote}>
+    <button className="button-style button-hover" onClick={getQuote}>
       Losuj
     </button>
   );

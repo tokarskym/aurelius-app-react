@@ -12,7 +12,7 @@ export default function ThoughtsTrap() {
         <p>10 minut</p>
       </div>
       <div className="button-div">
-        <Link to="/thoughtstrap01" className="start-link">
+        <Link to="/thoughtstrap01" className="start-link button-hover">
           Start
         </Link>
       </div>
