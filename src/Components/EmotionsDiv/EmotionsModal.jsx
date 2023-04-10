@@ -19,11 +19,10 @@ export default function EmotionsModal({ textValue, onTextAreaChange, onSaveClick
       <div className="modal-body">
         <div className={`blinking ${isEmpty ? 'visible' : 'hidden'}`}></div>
         <textarea value={textValue} onChange={handleTextAreaChange} className={`text-area-style ${isEmpty ? 'empty' : ''}`} />
-        <button onClick={onSaveClick} className="button-style save-button">
+        <button onClick={onSaveClick} className="button-style save-button button-hover">
           Zapisz
         </button>
       </div>
     </div>
   );
 }
-

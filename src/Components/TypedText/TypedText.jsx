@@ -20,10 +20,10 @@ export default function TypedText({ text }) {
   useEffect(() => {
     typeWriter();
     if (!typedText.current) {
-      console.error("The element with the id 'typed-text' was not found in the document.");
+      console.error("Element z klasą 'typed-text' nie został znaleziony.");
       return;
     }
-  // eslint-disable-next-line
+    // eslint-disable-next-line
   }, []);
 
   return (

@@ -1,6 +1,5 @@
 import Meditation01 from '../Images/Challenges/NegativeContemplation/meditation01.png';
 
-
 export const meditations = [
   {
     id: 1,

@@ -1,6 +1,7 @@
-import { handleBackButtonClick } from './BackButton';
 import BackButton from '../Images/Challenges/back.png';
 import NavbarLogo from '../Images/MainMenu/Navbar/navbar-logo.png';
+
+import { handleBackButtonClick } from './BackButton';
 
 export default function Navbar() {
   return (

@@ -1,4 +1,4 @@
-import Quotes from '../../Images/MainMenu/ChallengeBoxes/qoutes.png';
+import Quotes from '../../../Images/MainMenu/ChallengeBoxes/qoutes.png';
 
 import { Link } from 'react-router-dom';
 

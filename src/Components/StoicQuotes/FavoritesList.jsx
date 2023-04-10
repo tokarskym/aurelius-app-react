@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 
 export default function FavoritesList({ favorites, removeFromFavorites }) {
+  //save fav quotes in local storage
   useEffect(() => {
     localStorage.setItem('favorites', JSON.stringify(favorites));
   }, [favorites]);

@@ -5,7 +5,7 @@ import EmotionsModal from '../EmotionsDiv/EmotionsModal';
 import Journal from '../Journal/Journal';
 import NavbarLogo from '../../Images/MainMenu/Navbar/navbar-logo.png';
 import NegativeContemplation from '../NegativeContemplation/Intro/NegativeContemplation';
-import StoicQuotes from '../StoicQuotes/StoicQuotes';
+import StoicQuotes from '../StoicQuotes/Intro/StoicQuotes';
 import ThoughtsTrap from '../ThoughtsTraps/ThoughtsTrap';
 import TypedText from '../TypedText/TypedText';
 

@@ -2,7 +2,7 @@ import ErrorModal from './ErrorModal';
 import FavoritesList from './FavoritesList';
 import Loader from '../../Utils/Loader';
 import Navbar from '../../Utils/Navbar';
-import QuoteButton from './QuoteButton';
+import QuoteButton from './Buttons/QuoteButton';
 import QuoteDisplay from './QuoteDisplay';
 
 import { fetchQuote } from '../../Services/ApiQuotes';

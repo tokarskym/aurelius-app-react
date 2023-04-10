@@ -77,6 +77,14 @@ body {
   cursor: pointer;
 }
 
+.typed-text {
+  text-align: left;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-dark-gray);
+  margin-bottom: 30px;
+}
+
 /* welcome page styles*/
 
 .welcomepage-background {
@@ -158,14 +166,6 @@ body {
   margin: 30px 0 30px 0;
 }
 
-.typed-text {
-  text-align: left;
-  font-size: 26px;
-  font-weight: 700;
-  color: var(--text-dark-gray);
-  margin-bottom: 30px;
-}
-
 /*emotions bar*/
 
 .emotions-container {
@@ -230,9 +230,9 @@ body {
   position: relative;
   width: 96%;
   max-width: 500px;
-  height: 70vh;
+  height: 60vh;
   max-height: 700px;
-  border-radius: 8px;
+  border-radius: 20px;
   background-color: var(--modal-content-color);
 }
 
@@ -244,12 +244,16 @@ body {
 
 .modal-close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
   font-weight: 700;
   color: var(--text-ligh-gray);
   cursor: pointer;
+}
+
+.modal-content div.typed-text {
+  margin-left: 20px;
 }
 
 .save-button {
@@ -259,16 +263,10 @@ body {
   margin-bottom: 0;
 }
 
-.modal-content h1 {
-  margin: 10px 20px 10px;
-}
-
 .text-area-style {
-  font-family: 'Work Sans';
-  font-style: normal;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 169%;
+  font-size: 20px;
   background-color: transparent;
   color: var(--text-dark-gray);
   width: 91%;
@@ -611,6 +609,7 @@ p.thoughts-challenge-descriptions {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   color: var(--white);
+  font-size: 24px;
 }
 
 .meditation-description {
@@ -1229,6 +1228,10 @@ div.discomfort-exercise-div.locked {
     border-color: var(--btn-primary-orange);
   }
 
+  .save-button:hover {
+    border-color: var(--btn-primary-green);
+  }
+
   .start link {
     transition: all 0.5s ease-in-out;
   }
@@ -1311,5 +1314,9 @@ div.discomfort-exercise-div.locked {
   .font-size-button:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .settings-meditation-button:hover {
+    border-color: #61c4b7;
   }
 }

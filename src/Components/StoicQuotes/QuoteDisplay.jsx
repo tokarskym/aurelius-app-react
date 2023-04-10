@@ -1,4 +1,4 @@
-import AddToFavoritesButton from './AddToFavoritesButton';
+import AddToFavoritesButton from './Buttons/AddToFavoritesButton';
 
 export default function QuoteDisplay({ quote, author, isEllipsis, translatedQuote, plusButton, addToFavorites }) {
   return (

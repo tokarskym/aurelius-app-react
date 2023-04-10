@@ -1,16 +1,16 @@
-import Clown from '../Images/Challenges/ThoughtsTrap/clown.png';
-import Earth from '../Images/Challenges/ThoughtsTrap/ziemia.png';
-import Devil from '../Images/Challenges/ThoughtsTrap/diabelek.png';
-import Label from '../Images/Challenges/ThoughtsTrap/etykieta.png';
-import Facepalm from '../Images/Challenges/ThoughtsTrap/facepalm.png';
-import Comet from '../Images/Challenges/ThoughtsTrap/kometa.png';
-import Moon from '../Images/Challenges/ThoughtsTrap/ksiezyc.png';
-import Brain from '../Images/Challenges/ThoughtsTrap/mozg.png';
 import Ant from '../Images/Challenges/ThoughtsTrap/mroweczka.png';
-import Right from '../Images/Challenges/ThoughtsTrap/racja.png';
-import Goat from '../Images/Challenges/ThoughtsTrap/koziol.png';
+import Brain from '../Images/Challenges/ThoughtsTrap/mozg.png';
 import Ball from '../Images/Challenges/ThoughtsTrap/kula.png';
+import Clown from '../Images/Challenges/ThoughtsTrap/clown.png';
+import Comet from '../Images/Challenges/ThoughtsTrap/kometa.png';
+import Devil from '../Images/Challenges/ThoughtsTrap/diabelek.png';
+import Earth from '../Images/Challenges/ThoughtsTrap/ziemia.png';
+import Goat from '../Images/Challenges/ThoughtsTrap/koziol.png';
+import Facepalm from '../Images/Challenges/ThoughtsTrap/facepalm.png';
+import Label from '../Images/Challenges/ThoughtsTrap/etykieta.png';
+import Moon from '../Images/Challenges/ThoughtsTrap/ksiezyc.png';
 import Magnifier from '../Images/Challenges/ThoughtsTrap/lupa.png';
+import Right from '../Images/Challenges/ThoughtsTrap/racja.png';
 
 export const mistakes = [
   {
