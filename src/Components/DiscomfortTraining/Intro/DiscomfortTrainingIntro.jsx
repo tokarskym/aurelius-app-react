@@ -1,6 +1,6 @@
 import ChallengeDescriptionPage from '../../ChallengesReusableComponents/ChallengeDescriptionPage';
 
-export default function DiscomfortTraining01() {
+export default function DiscomfortTrainingIntro() {
   return (
     <ChallengeDescriptionPage
       title="Trening dyskomfortu"

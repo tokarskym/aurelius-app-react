@@ -1,7 +1,8 @@
-import NavbarLogo from '../../Images/MainMenu/Navbar/navbar-logo.png';
 import BackButton from '../../Images/Challenges/back.png';
-import { Link } from 'react-router-dom';
+import NavbarLogo from '../../Images/MainMenu/Navbar/navbar-logo.png';
+
 import { handleBackButtonClick } from '../../Utils/BackButton';
+import { Link } from 'react-router-dom';
 
 export default function ChallengeDescriptionPage({ title, quote, philosopher, description, url }) {
   return (

@@ -19,11 +19,11 @@ export default function ChallengeOfTheDay() {
         <img src={Challenge} alt="challenge of the day" />
       </div>
       <div className="box-description">
-        <h2> {!isStarted ? 'Wyzwanie dnia' : 'Niedostępne'}</h2>
+        <h2 style={{ textAlign: isStarted ? 'center' : 'left' }}> {!isStarted ? 'Wyzwanie dnia' : 'Niedostępne'}</h2>
         <p> {!isStarted ? '10 minut' : ''} </p>
       </div>
       <div className="button-div">
-        <Link onClick={handleStart} className="start-link">
+        <Link onClick={handleStart} className="start-link" style={{ display: isStarted ? 'none' : 'flex' }}>
           Start
         </Link>
       </div>
