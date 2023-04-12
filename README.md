@@ -22,4 +22,4 @@ The following technologies were used in this project:
 
 ## Project screenshots
 
-<img src="Images/readme/menu.png" alt="Opis obrazka">
+![Menu](https://raw.githubusercontent.com/tokarskym/aurelius-app-react/src/Images/Readme/menu.png)
