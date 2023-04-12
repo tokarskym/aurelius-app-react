@@ -22,4 +22,4 @@ The following technologies were used in this project:
 
 ## Project screenshots
 
-![Menu](https://raw.githubusercontent.com/tokarskym/aurelius-app-react/tree/main/src/Images/Readme/menu.png)
+![Menu](https://github.com/tokarskym/aurelius-app-react/raw/main/src/Images/Readme/menu.png)
