@@ -6,7 +6,7 @@ import Journal from '../Journal/Intro/Journal';
 import NavbarLogo from '../../Images/MainMenu/Navbar/navbar-logo.png';
 import NegativeContemplation from '../NegativeContemplation/Intro/NegativeContemplation';
 import StoicQuotes from '../StoicQuotes/Intro/StoicQuotes';
-import ThoughtsTrap from '../ThoughtsTraps/ThoughtsTrap';
+import ThoughtsTrap from '../ThoughtsTraps/Intro/ThoughtsTrap';
 import TypedText from '../TypedText/TypedText';
 
 import { useState, useEffect } from 'react';
@@ -15,6 +15,7 @@ export default function MainMenu({ userState, setUserState }) {
   const [showModal, setShowModal] = useState(false);
   const [selectedEmotion, setSelectedEmotion] = useState();
   const [textValue, setTextValue] = useState('');
+  
 
   const text = 'Cześć,\njak się teraz czujesz?';
 
@@ -51,7 +52,6 @@ export default function MainMenu({ userState, setUserState }) {
       </div>
       {showModal && (
         <div className="modal">
-          <div className="modal-background" onClick={() => setShowModal(false)} />
           <EmotionsModal
             selectedEmotion={selectedEmotion}
             textValue={textValue}

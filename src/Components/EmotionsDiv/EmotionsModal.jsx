@@ -38,12 +38,7 @@ export default function EmotionsModal({ textValue, onTextAreaChange, onSaveClick
       </span>
       <div className="modal-body">
         <div className={`blinking ${isEmpty ? 'visible' : 'hidden'}`}></div>
-        <textarea
-          value={textValue}
-          onChange={handleTextAreaChange}
-          placeholder={showPlaceholder ? 'Nie można zapisać emocji, bez wyjaśnienia' : ''}
-          className={`text-area-style ${isEmpty ? 'empty' : ''}`}
-        />
+        <textarea value={textValue} onChange={handleTextAreaChange} placeholder={showPlaceholder ? 'Nie można zapisać emocji, bez wyjaśnienia' : ''} className="text-area-style" />
         <button onClick={handleSaveClick} className="button-style save-button button-hover">
           Zapisz
         </button>

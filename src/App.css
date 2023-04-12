@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  word-break: break-word;
+}
+
 button {
   border-style: none;
 }
@@ -229,16 +233,41 @@ body {
   justify-content: center;
   position: relative;
   width: 96%;
-  max-width: 500px;
-  height: 60vh;
-  max-height: 700px;
+  max-width: 400px;
+  height: 70vh;
+  max-height: 500px;
   border-radius: 20px;
   background-color: var(--modal-content-color);
 }
 
+.modal-content-thoughts {
+  padding-top: 40px;
+  Padding-bottom: 40px;
+  height: auto;
+  max-height: none;
+  max-width: 500px;
+}
+
+.thoughts-summarise-modal {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.modal-content h1.thoughts-challenge-title,
+.modal-content button {
+  margin: 0 auto;
+}
+
+.modal-content p.modal-thoughts-p {
+  margin: 10px 20px 10px 20px;
+  text-align: left;
+}
+
+.modal-content h4 {
+  margin-left: 20px;
+}
+
 .modal-content .text-area-style {
-  margin-top: 10px;
-  margin-bottom: 10px;
   margin: 10px 0 10px 0;
 }
 
@@ -260,11 +289,9 @@ body {
   width: 229px;
   height: 45px;
   background-color: var(--btn-primary-green);
-  margin-bottom: 0;
 }
 
 .text-area-style {
-  font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   font-size: 20px;
   background-color: transparent;
@@ -306,10 +333,14 @@ body {
   display: none;
 }
 
-::placeholder {
-  color: red;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+div.thoughts-flex div.blinking {
+  top: 210px;
+  left: 30px;
+}
 
+::placeholder {
+  color: #5f5f5f;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes blink {
@@ -554,7 +585,7 @@ h1.thoughts-challenge-title {
   margin: 0 10px 0 30px;
 }
 
-p.thoughts-challenge-descriptions {
+p.thoughts-challenge-description {
   font-weight: 700;
   font-size: 14px;
   color: var(--text-dark-gray);
@@ -638,6 +669,10 @@ button.button-style.pause-meditation-button {
   width: 200px;
   margin-top: 40px;
   margin-bottom: 5px;
+}
+
+.button-style.disabled {
+  background-color: var(--box-rectangle-color);
 }
 
 button.button-style.settings-meditation-button {
@@ -840,7 +875,6 @@ ul.emotions-journal {
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
-  word-break: break-word;
   text-align: center;
   margin-right: 10px;
 }
@@ -998,6 +1032,7 @@ div.container-piechart {
 .error-modal .error-try-again {
   font-size: 14px;
   font-weight: 500;
+  margin-bottom: 20px;
 }
 
 /*discomfort training*/
@@ -1313,7 +1348,7 @@ div.discomfort-exercise-div.locked {
 
   .emotion-image-container img:hover {
     transition: all 0.5s ease-in-out;
-    transform: scale(1.3);
+    transform: scale(1.1);
   }
 
   .color-button:hover,
@@ -1324,5 +1359,9 @@ div.discomfort-exercise-div.locked {
 
   .settings-meditation-button:hover {
     border-color: #61c4b7;
+  }
+
+  .mistake-box {
+    cursor: pointer;
   }
 }

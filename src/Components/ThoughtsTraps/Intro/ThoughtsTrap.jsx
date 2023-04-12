@@ -1,4 +1,5 @@
-import Thoughts from '../../Images/MainMenu/ChallengeBoxes/thoughts.png';
+import Thoughts from '../../../Images/MainMenu/ChallengeBoxes/thoughts.png';
+
 import { Link } from 'react-router-dom';
 
 export default function ThoughtsTrap() {

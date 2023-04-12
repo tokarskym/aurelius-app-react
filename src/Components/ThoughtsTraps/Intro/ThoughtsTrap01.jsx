@@ -1,4 +1,4 @@
-import ChallengeDescriptionPage from '../ChallengesReusableComponents/ChallengeDescriptionPage';
+import ChallengeDescriptionPage from '../../ChallengesReusableComponents/ChallengeDescriptionPage';
 
 export default function ThoughtsTrap01() {
   return (
@@ -11,8 +11,7 @@ export default function ThoughtsTrap01() {
           Mózg sprawia, ze czujesz to co myślisz,
           a same myśli są przewaznie automatyczne i poza naszą kontrolą. Niektóre przekonania nie pochodzą od nas samych a wiele z myśli automatycznych jest negatywnych i
           nieprawdziwych."
-      url="/thoughtstrap02"
+      url="/thoughtstrapfullform"
     />
   );
 }
-

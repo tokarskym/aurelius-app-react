@@ -1,5 +1,5 @@
 export default function Mistake({ mistake, selectedMistakes, onMistakeClick }) {
-const isSelected = selectedMistakes.includes(mistake.description);
+  const isSelected = selectedMistakes.includes(mistake.description);
 
   function handleClick() {
     onMistakeClick(mistake.description);
